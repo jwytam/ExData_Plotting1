@@ -1,4 +1,8 @@
 # Plot 4
+# Note: Ensure that "household_power_consumption.txt" is stored in the current working directory
+
+# Load package sqldf
+require("sqldf")
 
 # Create SELECT statement to select data where the date is between 1/2/2007 and 2/2/2007
 mySql <- "SELECT * from file WHERE Date = '1/2/2007' OR Date = '2/2/2007'"
