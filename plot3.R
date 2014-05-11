@@ -12,7 +12,7 @@ myData <- read.csv2.sql("./household_power_consumption.txt", sql=mySql)
 
 # Create new column and convert to datetime datatype
 myData["Datetime"] <- NA
-myData$Datetime <- strptime(paste(z$Date, z$Time), format='%d/%m/%Y %T')
+myData$Datetime <- strptime(paste(myData$Date, myData$Time), format='%d/%m/%Y %T')
 
 # Create the diagram
 png(file="plot3.png", width=480, height=480)
